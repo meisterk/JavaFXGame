@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="250.0" minWidth="300.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Spieler 1">
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" text="Mensch" />
+                  <RadioMenuItem mnemonicParsing="false" text="Computer" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Spieler 2">
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" text="Mensch" />
+                  <RadioMenuItem mnemonicParsing="false" text="Computer" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>        
+        <Button fx:id="buttonMensch" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="322.0" text="Spieleraktion Mensch" VBox.vgrow="NEVER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="322.0" text="Spielausgabe" VBox.vgrow="ALWAYS" />
+      <Label alignment="BOTTOM_LEFT" text="Spieler1: *, Spieler 2: *" VBox.vgrow="NEVER" />
+    </children>
+</VBox>
