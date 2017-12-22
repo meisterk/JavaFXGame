@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.*;
 import javafx.scene.control.*;
 
-public class PassiveView implements Initializable , GUI{
+public class PassiveView implements Initializable, GUI {
 
     //---------------------------------------------
     // Membervariablen für Steuerelemente
@@ -16,9 +16,9 @@ public class PassiveView implements Initializable , GUI{
             player2Mensch, player2Computer;
     @FXML
     private Button buttonMensch;
-    
+
     @FXML
-    private Label labelStatus;
+    private Label labelSpiel, labelStatus;
 
     //---------------------------------------------
     // Sonstige Membervariablen
@@ -47,13 +47,18 @@ public class PassiveView implements Initializable , GUI{
         });
 
         buttonMensch.setOnAction(event -> {
-
+            playerManager.aktionMensch();
         });
 
         //---------------------------------------------
         // Start
         //---------------------------------------------
         playerManager = new PlayerManager(this);
+    }
+
+    @Override
+    public void displaySpiel(String text) {
+        labelSpiel.setText(text);
     }
 
     @Override

@@ -33,7 +33,7 @@
         </menus>
       </MenuBar>        
         <Button fx:id="buttonMensch" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="322.0" text="Spieleraktion Mensch" VBox.vgrow="NEVER" />
-      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="322.0" text="Spielausgabe" VBox.vgrow="ALWAYS" />
+      <Label fx:id="labelSpiel" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="322.0" text="Spielausgabe" VBox.vgrow="ALWAYS" />
       <Label fx:id="labelStatus" alignment="BOTTOM_LEFT" text="Spieler1: *, Spieler 2: *" VBox.vgrow="NEVER" />
     </children>
 </VBox>

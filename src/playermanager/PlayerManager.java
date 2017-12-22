@@ -1,15 +1,18 @@
 package playermanager;
 
+import Game.Game;
 import view.GUI;
 
 public class PlayerManager {
 
     private GUI gui;
+    private Game game;
 
     private Player player1;
     private Player player2;
 
     public PlayerManager(GUI gui) {
+        game = new Game();
         this.gui = gui;
         player1 = new Mensch();
         player2 = new Mensch();
@@ -37,9 +40,13 @@ public class PlayerManager {
     }
 
     private void displayPlayerStatus() {
-        String text = "Spieler 1: " + player1.getTyp() +
-                ", Spieler 2: " + player2.getTyp();
+        String text = "Spieler 1: " + player1.getTyp()
+                + ", Spieler 2: " + player2.getTyp();
         gui.setStatus(text);
+    }
+
+    public void aktionMensch() {
+        
     }
 
 }
