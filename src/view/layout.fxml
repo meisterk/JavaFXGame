@@ -14,26 +14,26 @@
         <menus>
           <Menu mnemonicParsing="false" text="Spieler 1">
                <items>
-                  <RadioMenuItem mnemonicParsing="false" text="Mensch">
+                  <RadioMenuItem fx:id="player1Mensch" mnemonicParsing="false" text="Mensch">
                      <toggleGroup>
                         <ToggleGroup fx:id="player1" />
                      </toggleGroup></RadioMenuItem>
-                  <RadioMenuItem mnemonicParsing="false" text="Computer" toggleGroup="$player1" />
+                  <RadioMenuItem fx:id="player1Computer" mnemonicParsing="false" text="Computer" toggleGroup="$player1" />
                </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Spieler 2">
                <items>
-                  <RadioMenuItem mnemonicParsing="false" text="Mensch">
+                  <RadioMenuItem fx:id="player2Mensch" mnemonicParsing="false" text="Mensch">
                      <toggleGroup>
                         <ToggleGroup fx:id="player2" />
                      </toggleGroup></RadioMenuItem>
-                  <RadioMenuItem mnemonicParsing="false" text="Computer" toggleGroup="$player2" />
+                  <RadioMenuItem fx:id="player2Computer" mnemonicParsing="false" text="Computer" toggleGroup="$player2" />
                </items>
           </Menu>
         </menus>
       </MenuBar>        
         <Button fx:id="buttonMensch" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="322.0" text="Spieleraktion Mensch" VBox.vgrow="NEVER" />
       <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="322.0" text="Spielausgabe" VBox.vgrow="ALWAYS" />
-      <Label alignment="BOTTOM_LEFT" text="Spieler1: *, Spieler 2: *" VBox.vgrow="NEVER" />
+      <Label fx:id="labelStatus" alignment="BOTTOM_LEFT" text="Spieler1: *, Spieler 2: *" VBox.vgrow="NEVER" />
     </children>
 </VBox>
